@@ -1,7 +1,13 @@
 var citySearch =document.querySelector("#citySearch");
 var searchBtn = document.querySelector(".searchBtn");
 var cityHistory = [];
-var currentForecast = $("#currentForecast")
+var currentForecast = $("#currentForecast");
+var tempElement = $("#TempElement");
+var feelsLike = $("#feelsLike");
+var windSpeed = $("#windSpeed");
+var humidity = $("#humidity");
+
+
 
 var apiKey="f70e2df530793c052e1517053f70294a"
 
@@ -37,15 +43,23 @@ function oneCall(lat,lon) {
 
 
 
-            // 1. Create element
+            // the data when you press the search button       should I append to different location in html?
             var tempEl = $("<p>");
             tempEl.text(data.current.temp);
             currentForecast.append(tempEl);
 
-            var dewPoint = $("<p>");
-            dewPoint.text(data.current.dew_point);
-            currentForecast.append(dewPoint);
+            var feelsLike = $("<p>");
+            feelsLike.text(data.current.feels_like);
+            currentForecast.append(feelsLike);
 
+            var windSpeed = $("<p>");
+            windSpeed.text(data.current.wind_speed);
+            currentForecast.append(windSpeed);
+
+            var humidity = $("<p>");
+            humidity.text(data.current.humidity);
+            currentForecast.append(humidity);
+            
 
 
         })
