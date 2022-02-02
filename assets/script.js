@@ -1,6 +1,7 @@
 var citySearch =document.querySelector("#citySearch");
 var searchBtn = document.querySelector(".searchBtn");
 var cityHistory = [];
+var currentForecast = $("#currentForecast")
 
 var apiKey="f70e2df530793c052e1517053f70294a"
 
@@ -34,14 +35,16 @@ function oneCall(lat,lon) {
         .then(function(data){
             console.log(data)
 
+
+
             // 1. Create element
-            var tempEl = document.createElement('p');
+            var tempEl = $("<p>");
+            tempEl.text(data.current.temp);
+            currentForecast.append(tempEl);
 
-            //2. Give element content (.textContent)
-            tempEl.textContent = data.current.temp;
-
-            //3. Append to the page 
-            forecast.append(tempEl)
+            var dewPoint = $("<p>");
+            dewPoint.text(data.current.dew_point);
+            currentForecast.append(dewPoint);
 
 
 
