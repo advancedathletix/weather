@@ -7,4 +7,15 @@ h1 {
 .searchBtn {
     color: white;
     background-color: blue;
+    width: 1.5in;
+    text-align: center;
+}
+
+button {
+    width: 2in;
+    
+}
+
+#currentForecast {
+    float: right;
 }
