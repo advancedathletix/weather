@@ -11,11 +11,11 @@ h1 {
     text-align: center;
 }
 
-button {
-    width: 2in;
-    
-}
 
 #currentForecast {
  float: right;
+}
+
+hr {
+    color: blue;
 }
