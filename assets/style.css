@@ -19,3 +19,19 @@ h1 {
 hr {
     color: blue;
 }
+
+
+
+   .icon {
+    display: left;
+    float: left;
+    height: 200px;
+    width: 190px;
+    margin: 20px;
+    border: 5px solid rgb(48, 47, 47);
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
+
+ 

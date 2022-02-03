@@ -1,3 +1,5 @@
+var city =""
+
 var citySearch =document.querySelector("#citySearch");
 var searchBtn = document.querySelector(".searchBtn");
 var cityHistory = [];
@@ -40,6 +42,9 @@ function oneCall(lat,lon) {
         })
         .then(function(data){
             console.log(data)
+
+
+            
 
 
 
