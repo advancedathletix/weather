@@ -28,10 +28,12 @@ hr {
     height: 200px;
     width: 190px;
     margin: 20px;
-    border: 5px solid rgb(48, 47, 47);
+    border: 5px solid black;
     border-radius: 10px;
     background-color: blue;
     color: white;
 }
 
- 
+img {
+    height: 100px;
+}
