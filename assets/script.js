@@ -61,15 +61,12 @@ function oneCall(lat,lon) {
             var tempEl = $("<p>");
             tempEl.text(data.current.temp);
             currentForecast.append(tempEl);
-
             var feelsLike = $("<p>");
             feelsLike.text(data.current.feels_like);
             currentForecast.append(feelsLike);
-
             var windSpeed = $("<p>");
             windSpeed.text(data.current.wind_speed);
             currentForecast.append(windSpeed);
-
             var humidity = $("<p>");
             humidity.text(data.current.humidity);
             currentForecast.append(humidity);

@@ -32,13 +32,25 @@
 <center>
 <h3>Five Day Forecast</h3>
 </center>
+
+
+
+
+<div>
+    <h3>Search For 5 day forecast:</h3>
+    <input placeholder="Enter City Name" id="citySearch5">
+    <button class="searchBtn5">Search</button>
+    </div>
+
+    <h2 id="cityName"></h2>
+
 <div id="weatherContainer">
     <div id="imageContainer">
         <div class="icon">
             <p class="Weather" id="day1"></p>
             <div class="image"><img src="assets/weatherIMG.png" class="imgClass" id="img1"
-                <p>Temerature: <span id="5DayTemp1"></span></p>
-                <p>Humidity: <span id="5DayHum1"></span></p>
+                <p>Temerature: <span id="Min"></span></p>
+                <p>Humidity: <span id="Max"></span></p>
             </div>
         </div>
         <div class="icon">
@@ -80,6 +92,6 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
-    
+    <script src="./assets/5dayscript.js"></script>
 </body>
 </html>
