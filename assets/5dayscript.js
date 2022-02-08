@@ -19,6 +19,7 @@ function callLocation(cityFive) {
         .then(function (res) {
             return res.json();
         })
+        
         .then(function (data) {
             oneCall(data.coord.lat, data.coord.lon)
         })
